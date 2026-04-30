@@ -1,0 +1,194 @@
+#about {
+  background: #050505;
+  padding: 88px 0;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.about-header h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.about-header p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 16px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-text p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.75;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.about-tags span {
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+  transition: background 0.2s;
+  cursor: default;
+}
+
+.about-tags span:hover {
+  background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.about-card {
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    background 0.2s,
+    transform 0.2s,
+    box-shadow 0.3s,
+    border-color 0.3s;
+  cursor: default;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+}
+
+/* card 1 — azul */
+.about-card:nth-child(1):hover {
+  background: rgba(44, 100, 237, 0.1);
+  border-color: rgba(44, 100, 237, 0.4);
+  box-shadow: 0 0 24px rgba(44, 100, 237, 0.2);
+}
+
+/* card 2 — roxo */
+.about-card:nth-child(2):hover {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 24px rgba(139, 92, 246, 0.2);
+}
+
+/* card 3 — ciano */
+.about-card:nth-child(3):hover {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 0 24px rgba(6, 182, 212, 0.2);
+}
+
+/* card 4 — verde */
+.about-card:nth-child(4):hover {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.2);
+}
+
+.about-card span {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.about-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.about-card p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.about-icon-wrapper {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+}
+
+.about-icon-glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgba(44, 100, 237, 0.6),
+    rgba(139, 92, 246, 0.6),
+    rgba(248, 66, 66, 0.4),
+    rgba(16, 185, 129, 0.4),
+    rgba(44, 100, 237, 0.6)
+  );
+  filter: blur(18px);
+  opacity: 0.7;
+  animation: spinGlow 4s linear infinite;
+}
+
+.about-icon {
+  position: relative;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+@keyframes spinGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

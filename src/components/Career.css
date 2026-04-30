@@ -1,0 +1,263 @@
+#career {
+  background: #050505;
+  padding: 88px 0;
+}
+
+.career-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.career-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.career-header h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.career-header p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 16px;
+}
+
+/* glow icon */
+.career-icon-wrapper {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+}
+
+.career-icon-glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgba(44, 100, 237, 0.6),
+    rgba(139, 92, 246, 0.6),
+    rgba(248, 66, 66, 0.4),
+    rgba(16, 185, 129, 0.4),
+    rgba(44, 100, 237, 0.6)
+  );
+  filter: blur(18px);
+  opacity: 0.7;
+  animation: spinGlow 4s linear infinite;
+}
+
+.career-icon {
+  position: relative;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spinGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* timeline */
+.career-timeline {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.career-timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+}
+
+.career-item {
+  position: relative;
+  padding-left: 56px;
+  margin-bottom: 32px;
+}
+
+.career-item:last-child {
+  margin-bottom: 0;
+}
+
+.career-dot {
+  position: absolute;
+  left: 10px;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.career-card {
+  padding: 28px;
+  border-radius: 18px;
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    transform 0.2s,
+    box-shadow 0.3s;
+  position: relative;
+  z-index: 0;
+}
+
+.career-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  background: conic-gradient(
+    rgba(44, 100, 237, 0.6),
+    rgba(139, 92, 246, 0.6),
+    rgba(248, 66, 66, 0.4),
+    rgba(16, 185, 129, 0.4),
+    rgba(44, 100, 237, 0.6)
+  );
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: -2;
+  filter: blur(4px);
+}
+
+.career-card::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: #0d0d0d;
+  z-index: -1;
+}
+
+.career-card:hover::before {
+  opacity: 1;
+}
+
+.career-card:hover {
+  transform: translateY(-4px);
+  border-color: transparent;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.career-period {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.career-icon-small {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.career-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.career-role {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 14px;
+}
+
+.career-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.career-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.career-tags span {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.career-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.career-badge-dev {
+  background: rgba(44, 100, 237, 0.1);
+  color: #2c64ed;
+  border-color: rgba(44, 100, 237, 0.3);
+}
+
+@media (max-width: 768px) {
+  .career-timeline::before {
+    left: 12px;
+  }
+
+  .career-item {
+    padding-left: 40px;
+  }
+
+  .career-dot {
+    left: 4px;
+  }
+}
