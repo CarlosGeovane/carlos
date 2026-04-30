@@ -79,7 +79,7 @@ export default function Contact() {
       }
     `
 
-    const SIM_SIZE = 64
+    const SIM_SIZE = 128
     const COUNT = SIM_SIZE * SIM_SIZE
 
     function generatePositions() {
