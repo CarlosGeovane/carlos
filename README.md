@@ -1,73 +1,149 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Carlos Geovane — Portfólio Pessoal
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-r184-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Site pessoal e portfólio de Carlos Geovane Belan — Desenvolvedor Fullstack**
 
-## React Compiler
+[🌐 Ver Site](#) · [📧 Contato](mailto:carlosgeovanebelan@gmail.com) · [💼 LinkedIn](https://linkedin.com/in/carlosgeovanebelan) · [🐙 GitHub](https://github.com/CarlosGeovane)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Sobre o Projeto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Portfólio pessoal desenvolvido do zero com foco em performance, design moderno e experiência imersiva. O destaque é o **hero interativo com partículas 3D** em tempo real — renderizado via WebGL com shaders GLSL customizados usando Three.js, respondendo ao movimento do mouse do usuário.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎯 Seções
+
+| Seção | Descrição |
+|-------|-----------|
+| **Hero** | Animação de partículas 3D interativa com Three.js + WebGL |
+| **Sobre Mim** | Trajetória, foco profissional e stack principal |
+| **Educação** | Formação acadêmica e certificações |
+| **Skills** | Stack técnico com barras de progresso por categoria |
+| **Carreira** | Experiências e linha do tempo profissional |
+| **Projetos** | Projetos em destaque com links para GitHub e demo |
+| **Contato** | Formulário e links de redes sociais |
+
+---
+
+## 🛠️ Stack Técnico
+
+**Frontend**
+- [React 19](https://react.dev/) + [TypeScript 6](https://www.typescriptlang.org/)
+- [Vite 8](https://vite.dev/) — build tool ultrarrápida
+- CSS Modules com efeito **glassmorphism** customizado
+
+**3D & Animações**
+- [Three.js r184](https://threejs.org/) — renderização WebGL
+- GPGPU via `WebGLRenderTarget` para simulação de partículas
+- Shaders GLSL customizados (Simplex Noise, raycasting com mouse)
+
+---
+
+## 🚀 Rodando Localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/CarlosGeovane/carlos-geovane.git
+cd carlos-geovane
+
+# Instale as dependências
+yarn install
+# ou: npm install
+
+# Rode em modo desenvolvimento
+yarn dev
+# ou: npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse `http://localhost:5173` no navegador.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Build para Produção
+
+```bash
+yarn build
+# ou: npm run build
 ```
+
+Os arquivos otimizados serão gerados na pasta `dist/`.
+
+---
+
+## 🌐 Deploy na Vercel
+
+Este projeto está configurado para deploy automático na Vercel.
+
+1. Importe o repositório em [vercel.com](https://vercel.com/)
+2. Framework preset: **Vite**
+3. Build command: `yarn build`
+4. Output directory: `dist`
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CarlosGeovane/carlos-geovane)
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+carlos-geovane/
+├── public/
+│   ├── avatar.jpg
+│   ├── favicon.svg
+│   ├── projeto-crud.png
+│   ├── projeto-taskmanager.png
+│   └── CurriculoCarlosGeovane.pdf
+├── src/
+│   ├── components/
+│   │   ├── Hero.tsx          # Animação Three.js + partículas GPGPU
+│   │   ├── About.tsx
+│   │   ├── Education.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Career.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Nav.tsx
+│   │   └── Footer.tsx
+│   ├── styles/
+│   │   ├── globals.css
+│   │   └── glass.css         # Efeito glassmorphism
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── vite.config.ts
+└── package.json
+```
+
+---
+
+## 📬 Contato
+
+<div>
+
+**Carlos Geovane Belan**
+Estudante de Ciência da Computação — Dom Helder Câmara (2028)
+Desenvolvedor Fullstack | Backend Focus
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-carlosgeovanebelan-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/carlosgeovanebelan)
+[![GitHub](https://img.shields.io/badge/GitHub-CarlosGeovane-181717?style=flat-square&logo=github)](https://github.com/CarlosGeovane)
+
+</div>
+
+---
+
+<div align="center">
+
+Feito com ☕ e muito código por **Carlos Geovane**
+
+</div>
