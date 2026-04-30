@@ -10,7 +10,7 @@
 
 **Site pessoal e portfólio de Carlos Geovane Belan — Desenvolvedor Fullstack**
 
-[🌐 Ver Site](#) · [📧 Contato](mailto:carlosgeovanebelan@gmail.com) · [💼 LinkedIn](https://linkedin.com/in/carlosgeovanebelan) · [🐙 GitHub](https://github.com/CarlosGeovane)
+[🌐 Ver Site](https://carlos-geovane.vercel.app) · [📧 Contato](mailto:carlosgeovanebelan@gmail.com) · [💼 LinkedIn](https://linkedin.com/in/carlosgeovanebelan) · [🐙 GitHub](https://github.com/CarlosGeovane)
 
 </div>
 
