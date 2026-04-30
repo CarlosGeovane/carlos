@@ -200,7 +200,7 @@ export default function Contact() {
         uPulseProgress: { value: 0 },
         uRingPos: { value: new THREE.Vector2(0, 0) },
         uRez: { value: new THREE.Vector2(W * PR, H * PR) },
-        uParticleScale: { value: (W / PR / 2000) * 0.75 },
+        uParticleScale: { value: (W / PR / 2000) * 1.2 },
         uPixelRatio: { value: PR }, uColorScheme: { value: 1 },
       },
       vertexShader: `
@@ -330,7 +330,7 @@ export default function Contact() {
       camera.aspect = W / H
       camera.updateProjectionMatrix()
       renderMat.uniforms.uRez.value.set(W * PR, H * PR)
-      renderMat.uniforms.uParticleScale.value = (W / PR / 2000) * 0.75
+      renderMat.uniforms.uParticleScale.value = (W / PR / 2000) * 1.2
     }
 
     window.addEventListener('mousemove', onMouseMove)
